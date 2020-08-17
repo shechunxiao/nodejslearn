@@ -71,7 +71,8 @@
   "include": [
     "src/module/*",
     "src/manual/*",
-    "test/*"
+    "test/*",
+    "src/mysql/*"
   ],
   "exclude": [
     "src/module/exclude.ts"
