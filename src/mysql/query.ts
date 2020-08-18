@@ -5,7 +5,9 @@ let connection_query = query.createConnection({
     password : 'scxmdrslb',
     database : 'shechunxiao'
 });
-connection_query.connect();
+connection_query.connect(function(){
+    console.log(connection_query.threadId)
+});
 // 第一种query形式
 // connection_query.query('select * from mysql_first', function(err: any, rows: { solution: any; }[], fields: any) {
 //     if (err) throw err;
@@ -39,15 +41,57 @@ connection_query.connect();
 //     console.log(results)
 // });
 // 插入
-let post = {id:6,name:"nodejs测试",email:"dfdf"}
-connection_query.query("insert into mysql_first set ?",post,function(err: any, rows: any){
-    console.log(rows)
-});
+// let post = {id:6,name:"nodejs测试",email:"dfdf"}
+// connection_query.query("insert into mysql_first set ?",post,function(err: any, rows: any){
+//     console.log(rows)
+// });
+// connection_query.query('INSERT INTO mysql_first SET ?', {name: 'test',email:'test@qq.com'}, function(err: any, result: { insertId: any; }) {
+//     if (err) throw err;
+//     console.log(result.insertId);
+// });
+// 删除
+// connection_query.query('DELETE FROM mysql_first WHERE id = ?',[1], function (err: any, result: { affectedRows: string; }) {
+//     if (err) throw err;
+//     console.log('deleted ' + result.affectedRows + ' rows');
+// })
+// 更新
+// connection_query.query('UPDATE mysql_first SET name=? where id=?',['change',6] ,function (err: any, result: { changedRows: string; }) {
+//     if (err) throw err;
+//     console.log('changed ' + result.changedRows + ' rows');
+// })
+// connection_query.beginTransaction(function(err: any) {
+//     if (err) { throw err; }
+//     connection_query.query('UPDATE mysql_first SET name=? where id=?', ['zhangsan',6], function(err: any, result: { insertId: string; }) {
+//         if (err) {
+//             return connection_query.rollback(function() {
+//                 throw err;
+//             });
+//         }
+//         var log = 'Post ' + result.insertId + ' added';
+//         connection_query.query('INSERT INTO mysql_first SET name=?', log, function(err: any, result: any) {
+//             if (err) {
+//                 return connection_query.rollback(function() {
+//                     throw err;
+//                 });
+//             }
+//             connection_query.commit(function(err: any) {
+//                 if (err) {
+//                     return connection.rollback(function() {
+//                         throw err;
+//                     });
+//                 }
+//                 console.log('success!');
+//             });
+//         });
+//     });
+// });
+connection_query.ping(function (err: any) {
+    if (err) throw err;
+    console.log('Server responded to ping');
+})
 
-
-
-connection_query.end(function(err: any){
-    if (err){
-        console.log(err)
-    }
-});
+// connection_query.end(function(err: any){
+//     if (err){
+//         console.log(err)
+//     }
+// });
