@@ -1,0 +1,5 @@
+[2020-08-20T15:02:37.696] [DEBUG] min - Got cheese.
+[2020-08-20T15:02:37.702] [INFO] min - Cheese is Comté.
+[2020-08-20T15:02:37.702] [WARN] min - Cheese is quite smelly.
+[2020-08-20T15:02:37.702] [ERROR] min - Cheese is too ripe!
+[2020-08-20T15:02:37.702] [FATAL] min - Cheese was breeding ground for listeria.

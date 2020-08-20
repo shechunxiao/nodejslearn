@@ -1,14 +1,39 @@
-// let log4js = require("log4js");
-// let logger = log4js.getLogger();
-// logger.level = 'debug';
-// logger.debug("这里是log4js的初始使用");
-// const log4js = require("log4js");
+const log4js = require("log4js");
+let logger = log4js.getLogger();
+logger.level = "error";
+logger.error("是发送到发");
 // log4js.configure({
-//     appenders: { cheese: { type: "file", filename: "cheese.log" } },
-//     categories: { default: { appenders: ["cheese"], level: "error" } }
+//     appenders: {
+//         cheese: {
+//             type: "file",
+//             filename: "cheese.log"
+//         },
+//         max:{
+//             type:"file",
+//             filename:"max.log"
+//         },
+//         min:{
+//             type:"file",
+//             filename:"../../min.log"
+//         }
+//     },
+//     categories: {
+//         default: {
+//             appenders: ["cheese"],
+//             level: "error"
+//         },
+//         max:{
+//             appenders:["max"],
+//             level:"error"
+//         },
+//         min:{
+//             appenders:['min'],
+//             level:"debug"
+//         }
+//     }
 // });
 //
-// const logger = log4js.getLogger("cheese");
+// const logger = log4js.getLogger();
 // logger.trace("Entering cheese testing");
 // logger.debug("Got cheese.");
 // logger.info("Cheese is Comté.");
