@@ -1,0 +1,4 @@
+message Example1 {
+    optional string stringVal = 1;
+    optional bytes bytesVal = 2;
+}

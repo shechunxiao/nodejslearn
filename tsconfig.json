@@ -74,7 +74,8 @@
     "test/*",
     "src/mysql/*",
     "src/log4js/*",
-    "src/fsextra/*"
+    "src/fsextra/*",
+    "src/async/*"
   ],
   "exclude": [
     "src/module/exclude.ts"
