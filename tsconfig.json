@@ -73,7 +73,8 @@
     "src/manual/*",
     "test/*",
     "src/mysql/*",
-    "src/log4js/*"
+    "src/log4js/*",
+    "src/fsextra/*"
   ],
   "exclude": [
     "src/module/exclude.ts"
