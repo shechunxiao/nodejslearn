@@ -18,6 +18,8 @@
     "async": "^3.2.0",
     "fs-extra": "^9.0.1",
     "gitbook-cli": "^2.3.2",
+    "minimist": "^1.2.5",
+    "progress": "^2.0.3",
     "protobufjs": "^6.10.1",
     "typescript": "^3.9.7"
   },
