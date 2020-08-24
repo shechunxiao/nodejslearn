@@ -9,7 +9,6 @@
 //        reject(why);
 //    }
 // });
-// ss
 // console.log("最早执行")
 // function ftest() {
 //     return new Promise((resolve,reject)=>{
