@@ -75,7 +75,9 @@
     "src/mysql/*",
     "src/log4js/*",
     "src/fsextra/*",
-    "src/async/*"
+    "src/async/*",
+    "src/promise/*",
+    "src/api/*"
   ],
   "exclude": [
     "src/module/exclude.ts"
