@@ -77,7 +77,8 @@
     "src/fsextra/*",
     "src/async/*",
     "src/promise/*",
-    "src/api/*"
+    "src/api/*",
+    "src/network/*"
   ],
   "exclude": [
     "src/module/exclude.ts"
