@@ -78,7 +78,8 @@
     "src/async/*",
     "src/promise/*",
     "src/api/*",
-    "src/network/*"
+    "src/network/*",
+    "src/mime/*"
   ],
   "exclude": [
     "src/module/exclude.ts"
